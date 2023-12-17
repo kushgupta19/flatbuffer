@@ -1,0 +1,18 @@
+namespace MySpace;
+table Person {
+  Name: string;
+  Age: int;
+  Weight: float;
+  Gender: string;
+}
+table Group {
+  GroupName: string;
+  AvgAge: float;
+  AvgWeight: float;
+  Names: [string];
+}
+union Client {
+  Person,
+  Group
+}
+root_type Client;
